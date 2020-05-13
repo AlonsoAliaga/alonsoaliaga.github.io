@@ -1,6 +1,7 @@
 
 <p align="center">
-  <img src="https://i.imgur.com/2xl3txf.png" width="200" height="200"/></br>
+  <img src="https://i.imgur.com/2xl3txf.png" width="200" height="200"/>
+  </br>
   <font size="+10">Pokédex Bot</font>
 </p>
 
