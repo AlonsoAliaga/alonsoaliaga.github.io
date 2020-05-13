@@ -1,10 +1,10 @@
 
 <p align="center">
   <img src="https://i.imgur.com/2xl3txf.png" width="200" height="200"/></br>
-  <b font-size=2> Pokédex Bot </b></br>
-  <font size="+10">This is bigger text.</font>
+  <font size="+10">Pokédex Bot</font>
 </p>
 
+  <b font-size=2> Pokédex Bot </b></br>
 ## <span style="color: #339966;">Terms of services</span>
 
  By inviting Pokédex Bot to your server you agree to the following terms:
