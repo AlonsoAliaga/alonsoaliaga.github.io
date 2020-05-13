@@ -16,13 +16,13 @@
 title: AlonsoAliaga Developer Website
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
-  You can check my current projects and sources.
+  Temporary redirections for what i need.
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  AlonsoAliaga
 
-repository: "AlonsoAliaga/alonsoaliaga.github.io"
+repository: "AlonsoAliaga"
 
 # Build settings
 plugins:
