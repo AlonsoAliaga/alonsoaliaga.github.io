@@ -7,7 +7,7 @@ title: Terms of service
 # **Pokédex Bot**
 
 ## <span style="color: #339966;">Terms of services</span>
-
+<div style="text-align:center"><span style="color:red; font-family:Georgia; font-size:2em;">The goal of the Women’s Enterprise Action Loan Fund, (WEALF): helping women business owners become financially self-sufficient.</span></div>
  By inviting Pokédex Bot to your server you agree to the following terms:
 
  1) Pokédex Bot, along as Pokédex Bot's owners, support team and developers are allowed to share your guild's name with others to display statistics for leaderboards or to show guild list in which Pokédex Bot is being used.
