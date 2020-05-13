@@ -2,8 +2,10 @@
 layout: page
 title: Terms of service
 ---
-# ![](https://i.imgur.com/2xl3txf.png)
 
+<p align="center">
+  <img src="https://i.imgur.com/2xl3txf.png" width="200" height="200"/>
+</p>
 # **Pokédex Bot**
 
 ## <span style="color: #339966;">Terms of services</span>
