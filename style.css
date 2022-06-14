@@ -1,0 +1,12 @@
+.card {
+    display: inline-block;
+    border: solid 1px;
+    background-color: blue;
+    padding: 10px;
+}
+.bar-name {
+    font-size: medium;
+}
+.body {
+    
+}
