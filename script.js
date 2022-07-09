@@ -27,7 +27,6 @@ function loadCounter() {
  }
 }
 function checkSite(window) {
-    return;
   setTimeout(()=>{
     let href = window.location.href;
     console.log(href)
