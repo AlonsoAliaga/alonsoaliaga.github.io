@@ -36,7 +36,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="loadCounter(); checkSite(window);">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -1024,6 +1024,17 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script src="script.js"></script>
+
+  <div id="mybutton">
+    <div style="position: center;display: inline-block;">
+      <button class="buttonface"><a href="https://alonsoaliaga.github.io"><img src="https://raw.githubusercontent.com/AlonsoAliaga/alonsoaliaga.github.io/main/assets/img/apple-touch-icon.png"></a></button>
+      <br>
+      <div id="visitor-counter" style="text-align: center;">
+        <span id="counter-amount" style="text-shadow: 0px 0px 10px #ffffff;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: bold;">Visits: 0</span>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
