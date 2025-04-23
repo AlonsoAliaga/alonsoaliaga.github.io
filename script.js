@@ -26,15 +26,6 @@ function loadCounter() {
    });
  }
 }
-function checkSite(window) {
-  setTimeout(()=>{
-    let href = window.location.href;
-    console.log(href)
-    if(!href.includes(atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")) || href.startsWith("file:")) {
-      try{document.title = `Page stolen from https://${atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")}`;}catch(e){}
-      window.location = `https://${atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")}/`}
-  },1000);
-}
 function loadTools() {
   let tools = document.getElementById("available-tools");
   fetch('https://api.github.com/repos/AlonsoAliaga/AlonsoAliagaAPI/contents/api/tools/tools-list.json?ref=main')
@@ -52,4 +43,13 @@ function loadTools() {
 `);
   });
 }
-loadTools();
+function checkSite(window) {
+  setTimeout(()=>{
+    let href = window.location.href;
+    //console.log(href)
+    if(!href.includes(atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")) || href.startsWith("file:")) {
+      try{document.title = `Page stolen from https://${atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")}`;}catch(e){}
+      window.location = `https://${atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")}/`}
+  },1000);
+  loadTools();
+}
