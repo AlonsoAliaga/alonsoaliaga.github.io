@@ -35,3 +35,20 @@ function checkSite(window) {
       window.location = `https://${atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")}/`}
   },1000);
 }
+function loadTools() {
+  let tools = document.getElementById("available-tools");
+  fetch('https://api.github.com/repos/AlonsoAliaga/AlonsoAliagaAPI/contents/api/tools/tools-list.json?ref=main')
+  .then(res => res.json())
+  .then(content => {
+    const decoded = atob(content.content);
+    const parsed = JSON.parse(decoded);
+    let toolsData = parsed;
+    let toolsArray = []
+    console.log(`Loading ${Object.keys(toolsData).length} tools..`);
+    for(let toolData of toolsData) {
+      toolsArray.push(`<li><a target="_blank" href="${toolData.link}">${toolData.name}</a></li>`);
+    }
+    tools.innerHTML = toolsArray.join(`
+`);
+  });
+}
