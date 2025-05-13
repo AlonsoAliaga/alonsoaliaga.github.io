@@ -27,10 +27,12 @@ function loadCounter() {
  }
 }
 function loadTools() {
+  //console.log(`Loading tools from API..`);
   let tools = document.getElementById("available-tools");
   fetch('https://api.github.com/repos/AlonsoAliaga/AlonsoAliagaAPI/contents/api/tools/tools-list.json?ref=main')
   .then(res => res.json())
   .then(content => {
+    console.log(content);
     const decoded = atob(content.content);
     const parsed = JSON.parse(decoded);
     let toolsData = parsed;
@@ -44,6 +46,7 @@ function loadTools() {
   });
 }
 function checkSite(window) {
+  //console.log(`Checking site url..`);
   setTimeout(()=>{
     let href = window.location.href;
     //console.log(href)
