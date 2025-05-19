@@ -623,7 +623,6 @@ filterPlugins();
   }
   function checkSite(window) {
     setTimeout(()=>{
-      return
       let href = window.location.href;
       //console.log(href)
       if(!href.includes(atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")) || href.startsWith("file:")) {
