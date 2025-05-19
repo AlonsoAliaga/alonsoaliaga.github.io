@@ -211,10 +211,10 @@ function isTimeToRemember() {
   if(typeof lastReminder != "undefined") {
     let endTimeToRemind = +lastReminder + (hours * 60 * 60 * 1000);
     if(endTimeToRemind > Date.now()) {
-      console.log(`Not yet time to remember! In ${formatMillis(endTimeToRemind - Date.now())}`)
+      //console.log(`Not yet time to remember! In ${formatMillis(endTimeToRemind - Date.now())}`)
       return false;
     }else{
-      console.log(`It's time to remember!`)
+      //console.log(`It's time to remember!`)
       return true;
     }
   }
