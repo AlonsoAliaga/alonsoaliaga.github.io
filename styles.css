@@ -1181,3 +1181,36 @@ footer {
     transform: scale(1.1); /* Zoom in by 10% on hover */
     filter: grayscale(0%); /* Remove grayscale on hover, showing full color */
 }
+#mybutton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: MinecraftRegular;
+}
+#mybutton:hover {
+  bottom: 15px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.buttonface {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+@media (max-width: 992px) {
+  .mybutton {
+    width: 50px;
+    font-size: 10%;
+  }
+  #buttonface {
+    width: 50px;
+    font-size: 10%;
+  }
+}
