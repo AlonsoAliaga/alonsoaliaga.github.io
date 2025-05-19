@@ -191,7 +191,7 @@ function getContentSecondPage(){
                   <span style="font-weight: bold;">${isSpanishLanguage ? "Clic en el icono de la extensión del Ad Blocker":"Click on the extension icon for the ad blocker"}</span>. ${isSpanishLanguage ? "Esta usualmente en la esquina superior derecha de la pantalla." : 'It is usually located in the top right corner of the screen.'}
                 </li>   
                 <li style="margin: 25px 20px;">
-                  ${isSpanishLanguage ? 'Sigue las instrucciones para<span style="font-weight: bold;">desactivar el bloqueo de anuncios</span>.' : 'Follow the instructions to <span style="font-weight: bold;">disable ad blocking</span>.'}
+                  ${isSpanishLanguage ? 'Sigue las instrucciones para <span style="font-weight: bold;">desactivar el bloqueo de anuncios</span>.' : 'Follow the instructions to <span style="font-weight: bold;">disable ad blocking</span>.'}
                 </li>
                 <li style="margin: 25px 20px;">
                   ${isSpanishLanguage ? 'Recarga la pagina haciendo click en <span style="font-weight: bold;">"Listo! Ya lo hice!"</span>' : 'Refresh the page by clicking on <span style="font-weight: bold;">"Done! I\'m ready!"</span>'}
