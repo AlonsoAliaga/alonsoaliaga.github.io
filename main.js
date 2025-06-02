@@ -203,10 +203,11 @@ document.addEventListener("DOMContentLoaded", () => {
       toolsData.forEach((tool) => {
         const toolCard = document.createElement("div")
         toolCard.className = "card"
+        let logoUrl = tool.logo ? tool.logo : undefined;
         toolCard.innerHTML = `
           <div class="card-content">
             <div class="tool-icon">
-              <i class="fas fa-${tool.icon || "wrench"}"></i>
+              ${logoUrl ? `<img src=${logoUrl}>` : `<i class="fas fa-${tool.icon || "wrench"}"></i>`}
             </div>
             <h3>${tool.name}</h3>
             ${tool.description ? `<p>${tool.description}</p>` : ""}
