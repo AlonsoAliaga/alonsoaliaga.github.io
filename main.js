@@ -711,7 +711,7 @@ filterPlugins();
 
   let times = 0;
   function loadCounter() {
-   let link = atob("aHR0cHM6Ly9hbG9uc29hbGlhZ2EtcGFnZS1jb3VudC5nbGl0Y2gubWUvY291bnRlcj9zaXRlPTxzaXRlPiZrZXk9PGtleT4=").replace(/<site>/g,"alonsoaliaga").replace(/<key>/g,"KEY-A");
+   let link = atob("aHR0cHM6Ly9hbG9uc29hcGkuZGlzY2xvdWQuYXBwL2NvdW50ZXI/c2l0ZT08c2l0ZT4ma2V5PTxrZXk+").replace(/<site>/g,"alonsoaliaga").replace(/<key>/g,"KEY-A");
    let counter = document.getElementById("visitor-counter");
    if(counter) {
      $.ajax({
