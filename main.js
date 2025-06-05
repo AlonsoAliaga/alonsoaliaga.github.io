@@ -180,6 +180,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function loadTools() {
+    fetch('https://raw.githubusercontent.com/AlonsoAliaga/AlonsoAliagaAPI/refs/heads/main/api/tools/tools-list.json')
+    .then(res => res.json())
+    .then(content => {
+      toolsData = content;
+      populateWebsiteTools()
+      populateResourcesDropdown();
+      return
+      let toolsArray = []
+      for(let toolData of toolsData) {
+        let clazz = typeof toolData.clazz == "undefined" ? "" : ` class="${toolData.clazz}"`;
+        let style = typeof toolData.style == "undefined" ? "" : ` style="${toolData.style}"`;
+        toolsArray.push(`<span>💠</span> <span${clazz}${style}><a title="${toolData.description}" id="tool-priority-${toolData.priority}" href="${toolData.link}">${toolData.name}</a></span>`);
+      }
+      document.getElementById("tools-for-you").innerHTML = toolsArray.join(`<br>`);
+    });
+    return
     fetch('https://api.github.com/repos/AlonsoAliaga/AlonsoAliagaAPI/contents/api/tools/tools-list.json?ref=main')
     .then(res => res.json())
     .then(content => {
