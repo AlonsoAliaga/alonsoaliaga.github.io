@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AlonsoAliaga Development</title>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styles Recycled from Site CSS */
+        :root {
+            --background: #0f0f10;
+            --foreground: #f9fafb;
+            --card: #1a1a1c;
+            --card-foreground: #f9fafb;
+            --primary: #9333ea;
+            --primary-hover: #7e22ce;
+            --primary-foreground: #f9fafb;
+            --secondary: #1f1f23;
+            --secondary-foreground: #f9fafb;
+            --muted: #1f1f23;
+            --muted-foreground: #a1a1aa;
+            --accent: #1f1f23;
+            --accent-foreground: #f9fafb;
+            --destructive: #ef4444;
+            --destructive-foreground: #f9fafb;
+            --border: #27272a;
+            --input: #27272a;
+            --ring: #9333ea;
+            --radius: 0.5rem;
+            --purple-gradient: linear-gradient(to right, #9333ea, #d946ef);
+            --purple-gradient-hover: linear-gradient(to right, #7e22ce, #c026d3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", -apple-system, sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Navigation Style Recycled */
+        #dynamic-navbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid rgba(147, 51, 234, 0.2);
+            padding: 0.75rem 0;
+        }
+
+        #dynamic-navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text-main, .logo-text-sub {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--foreground);
+        }
+
+        /* Content Styling */
+        .content-section {
+            padding: 5rem 1rem;
+            min-height: 80vh;
+        }
+
+        .privacy-card {
+            background-color: var(--card);
+            border: 1px solid rgba(147, 51, 234, 0.3);
+            border-radius: var(--radius);
+            padding: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .gradient-text {
+            background: var(--purple-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            font-weight: 800;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(147, 51, 234, 0.3);
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .last-updated {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+        }
+
+        p, li {
+            color: var(--muted-foreground);
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li::before {
+            content: "✓";
+            color: var(--primary);
+            margin-right: 0.75rem;
+            font-weight: bold;
+        }
+
+        .owner-clause {
+            background-color: rgba(147, 51, 234, 0.05);
+            border: 1px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin: 2rem 0;
+            font-style: italic;
+        }
+
+        /* Footer Style Recycled */
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-top: 1px solid rgba(147, 51, 234, 0.2);
+            padding: 3rem 1rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .footer-logo .logo-text {
+            font-weight: 700;
+            font-size: 1.25rem;
+            padding-left: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            font-size: 0.8rem;
+            color: #71717a;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover, .footer-social a:hover {
+            color: #d946ef;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #52525b;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav id="dynamic-navbar">
+    <div class="container">
+        <a href="https://alonsoaliaga.github.io" class="logo">
+            <img width="45px" src="./assets/minilogo.png" alt="Logo">
+            <div class="logo-text-wrapper">
+                <span class="logo-text-main">AlonsoAliaga</span>
+                <span class="logo-text-sub">Development</span>
+            </div>
+        </a>
+    </div>
+</nav>
+
+<section class="content-section">
+    <div class="privacy-card">
+        <header>
+            <h1 class="gradient-text">Privacy & Security</h1>
+            <div class="last-updated">Last Updated: January 24, 2026</div>
+        </header>
+
+        <p>At <strong>AlonsoAliaga Development</strong>, user privacy is central to how we build our resources. As we primarily provide static tools and APIs, we follow a strict data minimization philosophy.</p>
+
+        <h2>1. Information Handling</h2>
+        <p>Because our site is static, we do not require user accounts, email addresses, or personal profiles. We only interact with the following technical identifiers:</p>
+        <ul>
+            <li><strong>Technical Logs:</strong> Our hosting infrastructure processes basic data such as IP addresses and timestamps to maintain security and prevent DDoS attacks.</li>
+            <li><strong>Functional Performance:</strong> We monitor anonymous usage statistics to ensure our APIs and tools are stable and bug-free.</li>
+            <li><strong>Essential State:</strong> We only use cookies for core functional reasons, such as saving a local preference or a setting you have chosen.</li>
+        </ul>
+
+        <h2>2. Data Usage</h2>
+        <p>Any technical data processed is used strictly for technical maintenance:</p>
+        <ul>
+            <li>To ensure high availability and performance of our developer tools.</li>
+            <li>To identify and block malicious automated traffic or API abuse.</li>
+            <li>To optimize the platform based on broad technical trends.</li>
+        </ul>
+
+        <div class="owner-clause">
+            <strong>Liability Disclaimer:</strong> All tools provided by AlonsoAliaga Development are offered "as is." We are not responsible for how third parties implement or utilize our public resources outside of their intended scope.
+        </div>
+
+        <h2>3. Infrastructure Partners</h2>
+        <p>We do not share data with third parties for marketing purposes. We utilize professional infrastructure to deliver our content:</p>
+        <ul>
+            <li><strong>GitHub Pages:</strong> Our project is hosted on GitHub. You can read more about their data handling in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" style="color: #3b82f6;">GitHub Privacy Statement</a>.</li>
+        </ul>
+
+        <h2>4. User Rights & Consent</h2>
+        <p>Under regulations like GDPR or CCPA, you have rights regarding your data. Since we do not store identities or emails, we rarely have personal data to provide or delete. By using our services, you agree to the minimal technical processing described in this policy.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img width="50px" src="./assets/minilogo.png" alt="Logo">
+                <span class="logo-text">AlonsoAliaga Development</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://alonsoaliaga.github.io/#plugins">Plugins</a>
+                <a href="https://alonsoaliaga.github.io/#designs">Designs</a>
+                <a href="https://alonsoaliaga.github.io/#about">About</a>
+                <a href="https://alonsoaliaga.github.io/#staff">Staff</a>
+                <a href="https://alonsoaliaga.github.io/#services">Services</a>
+                <a href="https://alonsoaliaga.github.io/#plans">Plans</a>
+                <a href="https://alonsoaliaga.github.io/#reviews">Reviews</a>
+                <a href="https://alonsoaliaga.github.io/#faq">FAQ</a>
+            </div>
+            <div class="footer-social">
+                <a target="_blank" href="https://alonsoaliaga.com/discord"><i class="fab fa-discord"></i><span class="sr-only">Discord</span></a>
+                <a target="_blank" href="https://github.com/AlonsoAliaga"><i class="fab fa-github"></i><span class="sr-only">GitHub</span></a>
+                <a target="_blank" href="https://alonsoaliaga.com/plugins"><i class="fas fa-globe"></i><span class="sr-only">Plugins</span></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2020 AlonsoAliaga Development. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
