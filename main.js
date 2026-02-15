@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileMenu.classList.remove("active")
     })
   }
-
   // Mobile dropdown toggle
   const mobileDropdownToggle = document.querySelector(".mobile-dropdown-toggle")
   const mobileDropdown = document.querySelector(".mobile-dropdown")

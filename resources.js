@@ -23,7 +23,7 @@ async function detectAdBlock() {
   } catch (e) {
       adBlockEnabled = true;
   } finally {
-      console.log(`AdBlock Enabled: ${adBlockEnabled}`);
+      //console.log(`AdBlock Enabled: ${adBlockEnabled}`);
   }
   return adBlockEnabled;
 }
